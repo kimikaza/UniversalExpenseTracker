@@ -19,7 +19,7 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
--(void)openSettingsScreen:(id)sender;
+-(void)openPrintScreen:(id)sender;
 -(void)fetchSums;
 
 @end

@@ -95,7 +95,7 @@ typedef NS_ENUM(NSInteger, UETFilterType) {
     
     if([[UIDevice currentDevice] userInterfaceIdiom] != UIUserInterfaceIdiomPad){
         UIBarButtonItem *settingsButton =
-            [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(openSettingsScreen:)];
+            [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(openPrintScreen:)];
         self.navigationItem.leftBarButtonItem = settingsButton;
     }else{
         self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers firstObject] topViewController];
@@ -162,8 +162,7 @@ typedef NS_ENUM(NSInteger, UETFilterType) {
 
 #pragma mark - Printing
 
--(void)openSettingsScreen:(id)sender{
-    //TODO open settings screen
+-(void)openPrintScreen:(id)sender{
     UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
     UIPrintInfo *printInfo = [UIPrintInfo printInfo];
     printInfo.jobName = @"Expense Tracker";
@@ -171,6 +170,31 @@ typedef NS_ENUM(NSInteger, UETFilterType) {
     [printInfo setOutputType:UIPrintInfoOutputGeneral];
     [printController setPrintInfo:printInfo];
     
+    NSMutableAttributedString *printData = [self prepareContentPrintString];
+    
+    UISimpleTextPrintFormatter *printFormatter = [[UISimpleTextPrintFormatter alloc] initWithAttributedText:printData];
+    UETSimplePageRenderer *pageRenderer = [[UETSimplePageRenderer alloc] init];
+    [pageRenderer addPrintFormatter:printFormatter startingAtPageAtIndex:0];
+    //use proportional font with this :)
+    NSString *headerText = @"DATE AND TIME           AMOUNT      DESCRIPTION              COMMENT";
+    [pageRenderer setHeaderText:headerText];
+    [pageRenderer setFooterHeight:30];
+    
+    [printController setPrintPageRenderer:pageRenderer];
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        [printController presentFromBarButtonItem:self.detailViewController.navigationItem.leftBarButtonItem animated:YES completionHandler:^(UIPrintInteractionController *printInteractionController, BOOL completed, NSError *error) {
+            //
+        }];
+    }else{
+        [printController presentAnimated:YES completionHandler:^(UIPrintInteractionController *printInteractionController, BOOL completed, NSError *error) {
+            //
+        }];
+    }
+}
+
+-(NSMutableAttributedString *)prepareContentPrintString
+{
     NSMutableAttributedString *printData = [[NSMutableAttributedString alloc] init];
     double runIncome = 0;
     double runExpense = 0;
@@ -209,34 +233,7 @@ typedef NS_ENUM(NSInteger, UETFilterType) {
         NSAttributedString *summaryAttr = [self makeARowFromIncome:runIncome Expense:runExpense Balance:runBalance NumOfDates:runNumOfDates];
         [printData appendAttributedString:summaryAttr];
     }
-    
-    UISimpleTextPrintFormatter *printFormatter = [[UISimpleTextPrintFormatter alloc] initWithAttributedText:printData];
-
-//    CORE GRAPHICS PAGE RENDERER, we do not need that here, arranging data there is really tedious!
-//    UETPrintPageRenderer *pageRenderer = [[UETPrintPageRenderer alloc] init];
-//    printController.printPageRenderer = pageRenderer;
-//    
-//    pageRenderer.data = [_fetchedResultsController fetchedObjects];
-//    pageRenderer.numberOfRows = pageRenderer.data.count;
-//    pageRenderer.footerHeight = 30;
-    
-    UETSimplePageRenderer *pageRenderer = [[UETSimplePageRenderer alloc] init];
-    [pageRenderer addPrintFormatter:printFormatter startingAtPageAtIndex:0];
-    NSString *headerText = @"DATE AND TIME           AMOUNT      DESCRIPTION              COMMENT";
-    [pageRenderer setHeaderText:headerText];
-    [pageRenderer setFooterHeight:30];
-    
-    [printController setPrintPageRenderer:pageRenderer];
-    
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        [printController presentFromBarButtonItem:self.detailViewController.navigationItem.leftBarButtonItem animated:YES completionHandler:^(UIPrintInteractionController *printInteractionController, BOOL completed, NSError *error) {
-            //
-        }];
-    }else{
-        [printController presentAnimated:YES completionHandler:^(UIPrintInteractionController *printInteractionController, BOOL completed, NSError *error) {
-            //
-        }];
-    }
+    return printData;
 }
 
 - (BOOL)differentDay:(NSDate *)currentDate lastDate:(NSDate *)lastDate
