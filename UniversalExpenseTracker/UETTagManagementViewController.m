@@ -209,6 +209,7 @@
 
 - (NSFetchedResultsController *)fetchedResultsController
 {
+    [NSFetchedResultsController deleteCacheWithName:@"Tags"];
     if (_fetchedResultsController != nil) {
         return _fetchedResultsController;
     }

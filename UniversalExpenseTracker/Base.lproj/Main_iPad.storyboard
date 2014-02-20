@@ -281,7 +281,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uRB-KS-DSF" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="211" y="186" width="280" height="30"/>
+                                <rect key="frame" x="211" y="186" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.9429174270072993" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -293,7 +293,7 @@
                                     <outlet property="delegate" destination="jVK-LX-scv" id="ny0-HA-mMc"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e8f-IV-oqE" customClass="JVFloatLabeledTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e8f-IV-oqE" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="211" y="309" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.94157732664233584" alpha="1" colorSpace="calibratedWhite"/>
@@ -306,7 +306,7 @@
                                     <outlet property="delegate" destination="jVK-LX-scv" id="My3-zl-Vmh"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nls-0v-ljc" customClass="JVFloatLabeledTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nls-0v-ljc" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="211" y="369" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.94037979014598538" alpha="1" colorSpace="calibratedWhite"/>
@@ -319,7 +319,7 @@
                                     <outlet property="delegate" destination="jVK-LX-scv" id="MvA-2O-ZIr"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jhz-Ld-sXC" customClass="JVFloatLabeledTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jhz-Ld-sXC" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="211" y="248" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.93627395072992703" alpha="1" colorSpace="calibratedWhite"/>
@@ -332,8 +332,8 @@
                                     <outlet property="delegate" destination="jVK-LX-scv" id="VMf-xR-C58"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTE-7m-P99">
-                                <rect key="frame" x="50" y="110" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTE-7m-P99">
+                                <rect key="frame" x="50" y="110" width="281" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2725821168" green="0.84757071169999998" blue="0.66694229009999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -348,7 +348,7 @@
                                     <action selector="incomePressed:" destination="jVK-LX-scv" eventType="touchUpInside" id="G0E-61-9Ah"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9M-9J-QWA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9M-9J-QWA">
                                 <rect key="frame" x="373" y="110" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70412294710000001" green="0.29262659670000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -371,7 +371,7 @@
                             <constraint firstAttribute="trailing" secondItem="uRB-KS-DSF" secondAttribute="trailing" constant="212" id="3E7-fV-hIE"/>
                             <constraint firstItem="Nls-0v-ljc" firstAttribute="leading" secondItem="Ytj-JF-Y2H" secondAttribute="leading" constant="211" id="6Bk-qk-7zZ"/>
                             <constraint firstItem="e8f-IV-oqE" firstAttribute="top" secondItem="Ytj-JF-Y2H" secondAttribute="top" constant="309" id="6FJ-2M-6Qd"/>
-                            <constraint firstItem="g9M-9J-QWA" firstAttribute="leading" secondItem="eTE-7m-P99" secondAttribute="trailing" constant="43" id="Fsd-09-3wK"/>
+                            <constraint firstItem="g9M-9J-QWA" firstAttribute="leading" secondItem="eTE-7m-P99" secondAttribute="trailing" constant="42" id="Fsd-09-3wK"/>
                             <constraint firstAttribute="trailing" secondItem="g9M-9J-QWA" secondAttribute="trailing" constant="50" id="K3Y-Vr-bmv"/>
                             <constraint firstItem="uRB-KS-DSF" firstAttribute="top" secondItem="Ytj-JF-Y2H" secondAttribute="top" constant="186" id="M8m-qW-6kQ"/>
                             <constraint firstItem="uRB-KS-DSF" firstAttribute="leading" secondItem="Ytj-JF-Y2H" secondAttribute="leading" constant="211" id="Plp-Q0-fKY"/>
@@ -382,7 +382,7 @@
                             <constraint firstAttribute="trailing" secondItem="e8f-IV-oqE" secondAttribute="trailing" constant="212" id="cGx-S9-0JJ"/>
                             <constraint firstAttribute="trailing" secondItem="Nls-0v-ljc" secondAttribute="trailing" constant="212" id="kCu-c2-Mwm"/>
                             <constraint firstItem="g9M-9J-QWA" firstAttribute="top" secondItem="Ytj-JF-Y2H" secondAttribute="top" constant="110" id="lxz-7N-1lc"/>
-                            <constraint firstItem="g9M-9J-QWA" firstAttribute="width" secondItem="eTE-7m-P99" secondAttribute="width" id="rrY-Zb-sdl"/>
+                            <constraint firstItem="g9M-9J-QWA" firstAttribute="width" secondItem="eTE-7m-P99" secondAttribute="width" constant="-1" id="rrY-Zb-sdl"/>
                             <constraint firstAttribute="trailing" secondItem="Jhz-Ld-sXC" secondAttribute="trailing" constant="212" id="xzQ-GU-jYT"/>
                             <constraint firstItem="e8f-IV-oqE" firstAttribute="leading" secondItem="Ytj-JF-Y2H" secondAttribute="leading" constant="211" id="yx0-XM-cvo"/>
                         </constraints>

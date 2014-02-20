@@ -40,79 +40,45 @@ static CGFloat const ROW_HEIGHT = 30;
     [self drawTextAtIndex:(pageIndex + 1) inRect:footerRect];
 }
 
-//- (void)drawTextAtIndex:(NSInteger)index atOffset:(CGPoint)offset inRect:(CGRect)contentRect{
-//    Expense *expense = _data[index];
-//    NSString *date = [self formatDate:[expense timeStamp]];
-//    NSString *time = [self formatTime:[expense timeStamp]];
-//    NSString *amount = [expense.amount stringValue];
-//    NSString *tag = expense.descriptionTag.tag;
-//    NSString *comment = expense.comment;
-//    NSString *row = [NSString stringWithFormat:@"%@\t\t%@\t\t%@\t\t%@\t\t%@",date, time, amount, tag, comment];
-//    CGContextRef context =  UIGraphicsGetCurrentContext();
-//
-//    CFStringRef rowRef= (__bridge CFStringRef)row;
-//    CFAttributedStringRef currentText = CFAttributedStringCreate(NULL, rowRef, NULL);
-//    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString(currentText);
-//
-//    CGRect frameRect = CGRectMake(0+offset.x, contentRect.size.height-30-offset.y, contentRect.size.width, 30);
-//    CGMutablePathRef framePath = CGPathCreateMutable();
-//    CGPathAddRect(framePath, NULL, frameRect);
-//
-//    CFRange currentRange = CFRangeMake(0, 0);
-//    CTFrameRef frameRef = CTFramesetterCreateFrame(framesetter, currentRange, framePath, NULL);
-//    CGPathRelease(framePath);
-//
-//    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
-//    CGContextSaveGState(context);
-//    CGContextTranslateCTM(context, 0, contentRect.size.height);
-//    CGContextScaleCTM(context, 1.0, -1.0);
-//    CTFrameDraw(frameRef, context);
-//    CGContextRestoreGState(context);
-//
-//    CFRelease(frameRef);
-//    CFRelease(rowRef);
-//    CFRelease(framesetter);
-//
-//}
-
-//- (void)drawTextAtIndex:(NSInteger)index atOffset:(CGPoint)offset inRect:(CGRect)contentRect{
-//    Expense *expense = _data[index];
-//    NSString *date = [self formatDate:[expense timeStamp]];
-//    NSString *time = [self formatTime:[expense timeStamp]];
-//    NSString *amount = [expense.amount stringValue];
-//    NSString *tag = expense.descriptionTag.tag;
-//    NSString *comment = expense.comment;
-//    NSString *row = [NSString stringWithFormat:@"%@\t\t%@\t\t%@\t\t%@\t\t%@",date, time, amount, tag, comment];
-//    CGContextRef context =  UIGraphicsGetCurrentContext();
-//    
-//    CFStringRef rowRef= (__bridge CFStringRef)row;
-//    CFAttributedStringRef currentText = CFAttributedStringCreate(NULL, rowRef, NULL);
-//    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString(currentText);
-//    
-//    CGRect frameRect = CGRectMake(0+offset.x, contentRect.size.height-30-offset.y, contentRect.size.width, 30);
-//    CGMutablePathRef framePath = CGPathCreateMutable();
-//    CGPathAddRect(framePath, NULL, frameRect);
-//    
-//    CFRange currentRange = CFRangeMake(0, 0);
-//    CTFrameRef frameRef = CTFramesetterCreateFrame(framesetter, currentRange, framePath, NULL);
-//    CGPathRelease(framePath);
-//    
-//    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
-//    CGContextSaveGState(context);
-//    CGContextTranslateCTM(context, 0, contentRect.size.height);
-//    CGContextScaleCTM(context, 1.0, -1.0);
-//    CTFrameDraw(frameRef, context);
-//    CGContextRestoreGState(context);
-//    
-//    CFRelease(frameRef);
-//    CFRelease(rowRef);
-//    CFRelease(framesetter);
-//    
-//}
+//not
+- (void)drawTextAtIndex:(NSInteger)index atOffset:(CGPoint)offset inRect:(CGRect)contentRect{
+    Expense *expense = _data[index];
+    NSString *date = [self formatDate:[expense timeStamp]];
+    NSString *time = [self formatTime:[expense timeStamp]];
+    NSString *amount = [expense.amount stringValue];
+    NSString *tag = expense.descriptionTag.tag;
+    NSString *comment = expense.comment;
+    NSString *row = [NSString stringWithFormat:@"%@\t\t%@\t\t%@\t\t%@\t\t%@",date, time, amount, tag, comment];
+    CGContextRef context =  UIGraphicsGetCurrentContext();
+    
+    CFStringRef rowRef= (__bridge CFStringRef)row;
+    CFAttributedStringRef currentText = CFAttributedStringCreate(NULL, rowRef, NULL);
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString(currentText);
+    
+    CGRect frameRect = CGRectMake(0+offset.x, contentRect.size.height-30-offset.y, contentRect.size.width, 30);
+    CGMutablePathRef framePath = CGPathCreateMutable();
+    CGPathAddRect(framePath, NULL, frameRect);
+    
+    CFRange currentRange = CFRangeMake(0, 0);
+    CTFrameRef frameRef = CTFramesetterCreateFrame(framesetter, currentRange, framePath, NULL);
+    CGPathRelease(framePath);
+    
+    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 0, contentRect.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CTFrameDraw(frameRef, context);
+    CGContextRestoreGState(context);
+    
+    CFRelease(frameRef);
+    CFRelease(rowRef);
+    CFRelease(framesetter);
+    
+}
 
 - (void)drawTextAtIndex:(NSInteger)index inRect:(CGRect)contentRect
 {
-    NSString *page = [NSString stringWithFormat:@"page %d",index];
+    NSString *page = [NSString stringWithFormat:@"page %d",(int)index];
     CGContextRef context =  UIGraphicsGetCurrentContext();
     
     CFStringRef rowRef= (__bridge CFStringRef)page;
