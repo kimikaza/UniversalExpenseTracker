@@ -1,0 +1,49 @@
+/* 
+  Localizable.strings
+  UniversalExpenseTracker
+
+  Created by Zoran Plesko on 15/02/14.
+  Copyright (c) 2014 Masinerija. All rights reserved.
+*/
+
+"INPUT_VIEW__AMOUNT_PLACEHOLDER" = "Enter Amount";
+"INPUT_VIEW__DATE_AND_TIME_PLACEHOLDER" = "Date and Time";
+"INPUT_VIEW__CHOOSE_TAG_PLACEHOLDER" = "Choose Tag";
+"INPUT_VIEW__ENTER_COMMENT_PLACEHOLDER" = "Enter comment (max 25 char)";
+
+"INPUT_DATE_FROM" = "Date from";
+"INPUT_DATE_TO" = "Date to";
+
+"TAG_ADD_ALERT_TITLE" = "Add New Tag";
+
+"DATA_CHECK_TITLE" = "Error";
+"DATA_CHECK_NO_DATE" = "Please enter date and time of expense/income";
+"DATA_CHECK_NO_AMOUNT" = "Please enter amount of expense/income";
+"DATA_CHECK_NO_TAG" = "Please enter description tag of expense/income";
+
+"FILTER_ALL" = "None";
+"FILTER_NONE" = "Filter by...";
+"FILTER_THIS_WEEK" = "This week";
+"FILTER_THIS_MONTH" = "This month";
+"FILTER_THIS_YEAR" = "This year";
+"FILTER_CUSTOM_DATE" = "Custom date";
+"FILTER_INCOME" = "Income";
+"FILTER_EXPENSE" = "Expense";
+"FILTER_TAG" = "Tag";
+
+"DATE_FROM_LATE" = "\"Date from\" cannot be after \"Date to\"";
+
+"NO_DELETE_TAG" = "Sorry, you can't delete default tags!";
+
+"LABEL_DATE" = "DATE";
+"LABEL_TIME" = "TIME";
+"LABEL_TAG" = "TAG";
+"LABEL_AMOUNT" = "AMOUNT";
+
+"INCOME" = "Income";
+"EXPENSE" = "Expense";
+"BALANCE" = "Balance";
+
+"CANCEL" = "Cancel";
+"ADD" = "Add";
+"OK" = "Ok";

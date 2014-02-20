@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3A25C618B380840064FEB1 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3A25C518B380840064FEB1 /* XYPieChart.m */; };
+		DB3A25C918B3B59D0064FEB1 /* DescriptionTag.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3A25C818B3B59D0064FEB1 /* DescriptionTag.m */; };
+		DB3A25CC18B40BBC0064FEB1 /* UETPrintPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3A25CB18B40BBC0064FEB1 /* UETPrintPageRenderer.m */; };
+		DB3A25CE18B41F1D0064FEB1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3A25CD18B41F1C0064FEB1 /* CoreText.framework */; };
+		DB54690518B4BF9800FE97FE /* UETSimplePageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB54690418B4BF9800FE97FE /* UETSimplePageRenderer.m */; };
 		DB72D2C818AEB29A00505BBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB72D2C718AEB29A00505BBE /* Foundation.framework */; };
 		DB72D2CA18AEB29A00505BBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB72D2C918AEB29A00505BBE /* CoreGraphics.framework */; };
 		DB72D2CC18AEB29A00505BBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB72D2CB18AEB29A00505BBE /* UIKit.framework */; };
@@ -26,6 +31,14 @@
 		DB72D2F518AEB29A00505BBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB72D2CD18AEB29A00505BBE /* CoreData.framework */; };
 		DB72D2FD18AEB29A00505BBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB72D2FB18AEB29A00505BBE /* InfoPlist.strings */; };
 		DB72D2FF18AEB29A00505BBE /* UniversalExpenseTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB72D2FE18AEB29A00505BBE /* UniversalExpenseTrackerTests.m */; };
+		DB74B1F818B19F9A00068F9F /* UETCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74B1F718B19F9A00068F9F /* UETCell.m */; };
+		DB792F8F18B2486800BB9C15 /* UETCustomDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB792F8E18B2486800BB9C15 /* UETCustomDateViewController.m */; };
+		DBF74C6018AF7CFE006D4DD4 /* UETInputExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF74C5F18AF7CFE006D4DD4 /* UETInputExpenseViewController.m */; };
+		DBF74C6718AF8F5C006D4DD4 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF74C6618AF8F5C006D4DD4 /* JVFloatLabeledTextField.m */; };
+		DBF74C6B18AFAA7C006D4DD4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBF74C6A18AFAA7C006D4DD4 /* Localizable.strings */; };
+		DBF74C6E18AFADE3006D4DD4 /* UETTagManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF74C6D18AFADE3006D4DD4 /* UETTagManagementViewController.m */; };
+		DBF74C7118AFAF63006D4DD4 /* UETNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF74C7018AFAF63006D4DD4 /* UETNavigationViewController.m */; };
+		DBF74C7B18AFCB40006D4DD4 /* Expense.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF74C7A18AFCB40006D4DD4 /* Expense.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +52,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB3A25C418B380840064FEB1 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		DB3A25C518B380840064FEB1 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		DB3A25C718B3B59D0064FEB1 /* DescriptionTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionTag.h; sourceTree = "<group>"; };
+		DB3A25C818B3B59D0064FEB1 /* DescriptionTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionTag.m; sourceTree = "<group>"; };
+		DB3A25CA18B40BBC0064FEB1 /* UETPrintPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UETPrintPageRenderer.h; sourceTree = "<group>"; };
+		DB3A25CB18B40BBC0064FEB1 /* UETPrintPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UETPrintPageRenderer.m; sourceTree = "<group>"; };
+		DB3A25CD18B41F1C0064FEB1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DB54690318B4BF9800FE97FE /* UETSimplePageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UETSimplePageRenderer.h; sourceTree = "<group>"; };
+		DB54690418B4BF9800FE97FE /* UETSimplePageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UETSimplePageRenderer.m; sourceTree = "<group>"; };
 		DB72D2C418AEB29A00505BBE /* UniversalExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB72D2C718AEB29A00505BBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB72D2C918AEB29A00505BBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +85,21 @@
 		DB72D2FA18AEB29A00505BBE /* UniversalExpenseTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UniversalExpenseTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		DB72D2FC18AEB29A00505BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB72D2FE18AEB29A00505BBE /* UniversalExpenseTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversalExpenseTrackerTests.m; sourceTree = "<group>"; };
+		DB74B1F618B19F9A00068F9F /* UETCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UETCell.h; sourceTree = "<group>"; };
+		DB74B1F718B19F9A00068F9F /* UETCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UETCell.m; sourceTree = "<group>"; };
+		DB792F8D18B2486800BB9C15 /* UETCustomDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UETCustomDateViewController.h; path = ../UETCustomDateViewController.h; sourceTree = "<group>"; };
+		DB792F8E18B2486800BB9C15 /* UETCustomDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UETCustomDateViewController.m; path = ../UETCustomDateViewController.m; sourceTree = "<group>"; };
+		DBF74C5E18AF7CFE006D4DD4 /* UETInputExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UETInputExpenseViewController.h; path = ../UETInputExpenseViewController.h; sourceTree = "<group>"; };
+		DBF74C5F18AF7CFE006D4DD4 /* UETInputExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UETInputExpenseViewController.m; path = ../UETInputExpenseViewController.m; sourceTree = "<group>"; };
+		DBF74C6518AF8F5C006D4DD4 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		DBF74C6618AF8F5C006D4DD4 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		DBF74C6A18AFAA7C006D4DD4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DBF74C6C18AFADE3006D4DD4 /* UETTagManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UETTagManagementViewController.h; sourceTree = "<group>"; };
+		DBF74C6D18AFADE3006D4DD4 /* UETTagManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UETTagManagementViewController.m; sourceTree = "<group>"; };
+		DBF74C6F18AFAF63006D4DD4 /* UETNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UETNavigationViewController.h; sourceTree = "<group>"; };
+		DBF74C7018AFAF63006D4DD4 /* UETNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UETNavigationViewController.m; sourceTree = "<group>"; };
+		DBF74C7918AFCB40006D4DD4 /* Expense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expense.h; sourceTree = "<group>"; };
+		DBF74C7A18AFCB40006D4DD4 /* Expense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expense.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3A25CE18B41F1D0064FEB1 /* CoreText.framework in Frameworks */,
 				DB72D2CA18AEB29A00505BBE /* CoreGraphics.framework in Frameworks */,
 				DB72D2CE18AEB29A00505BBE /* CoreData.framework in Frameworks */,
 				DB72D2CC18AEB29A00505BBE /* UIKit.framework in Frameworks */,
@@ -91,9 +129,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB3A25C318B380840064FEB1 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				DB3A25C418B380840064FEB1 /* XYPieChart.h */,
+				DB3A25C518B380840064FEB1 /* XYPieChart.m */,
+			);
+			path = XYPieChart;
+			sourceTree = "<group>";
+		};
 		DB72D2BB18AEB29A00505BBE = {
 			isa = PBXGroup;
 			children = (
+				DBF74C6418AF8F5C006D4DD4 /* 3rd Party */,
 				DB72D2CF18AEB29A00505BBE /* UniversalExpenseTracker */,
 				DB72D2F818AEB29A00505BBE /* UniversalExpenseTrackerTests */,
 				DB72D2C618AEB29A00505BBE /* Frameworks */,
@@ -113,6 +161,7 @@
 		DB72D2C618AEB29A00505BBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB3A25CD18B41F1C0064FEB1 /* CoreText.framework */,
 				DB72D2C718AEB29A00505BBE /* Foundation.framework */,
 				DB72D2C918AEB29A00505BBE /* CoreGraphics.framework */,
 				DB72D2CB18AEB29A00505BBE /* UIKit.framework */,
@@ -125,6 +174,7 @@
 		DB72D2CF18AEB29A00505BBE /* UniversalExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DBF74C7218AFAF68006D4DD4 /* Helpers */,
 				DB72D2D818AEB29A00505BBE /* AppDelegate.h */,
 				DB72D2D918AEB29A00505BBE /* AppDelegate.m */,
 				DB72D2DB18AEB29A00505BBE /* Main_iPhone.storyboard */,
@@ -133,8 +183,15 @@
 				DB72D2E518AEB29A00505BBE /* MasterViewController.m */,
 				DB72D2E718AEB29A00505BBE /* DetailViewController.h */,
 				DB72D2E818AEB29A00505BBE /* DetailViewController.m */,
+				DBF74C5E18AF7CFE006D4DD4 /* UETInputExpenseViewController.h */,
+				DBF74C5F18AF7CFE006D4DD4 /* UETInputExpenseViewController.m */,
+				DBF74C6C18AFADE3006D4DD4 /* UETTagManagementViewController.h */,
+				DBF74C6D18AFADE3006D4DD4 /* UETTagManagementViewController.m */,
+				DB792F8D18B2486800BB9C15 /* UETCustomDateViewController.h */,
+				DB792F8E18B2486800BB9C15 /* UETCustomDateViewController.m */,
 				DB72D2EA18AEB29A00505BBE /* Images.xcassets */,
 				DB72D2E118AEB29A00505BBE /* UniversalExpenseTracker.xcdatamodeld */,
+				DB72D30B18AEC06700505BBE /* Model */,
 				DB72D2D018AEB29A00505BBE /* Supporting Files */,
 			);
 			path = UniversalExpenseTracker;
@@ -145,6 +202,7 @@
 			children = (
 				DB72D2D118AEB29A00505BBE /* UniversalExpenseTracker-Info.plist */,
 				DB72D2D218AEB29A00505BBE /* InfoPlist.strings */,
+				DBF74C6A18AFAA7C006D4DD4 /* Localizable.strings */,
 				DB72D2D518AEB29A00505BBE /* main.m */,
 				DB72D2D718AEB29A00505BBE /* UniversalExpenseTracker-Prefix.pch */,
 			);
@@ -167,6 +225,43 @@
 				DB72D2FB18AEB29A00505BBE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB72D30B18AEC06700505BBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB3A25C718B3B59D0064FEB1 /* DescriptionTag.h */,
+				DB3A25C818B3B59D0064FEB1 /* DescriptionTag.m */,
+				DBF74C7918AFCB40006D4DD4 /* Expense.h */,
+				DBF74C7A18AFCB40006D4DD4 /* Expense.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DBF74C6418AF8F5C006D4DD4 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				DB3A25C318B380840064FEB1 /* XYPieChart */,
+				DBF74C6518AF8F5C006D4DD4 /* JVFloatLabeledTextField.h */,
+				DBF74C6618AF8F5C006D4DD4 /* JVFloatLabeledTextField.m */,
+			);
+			name = "3rd Party";
+			path = "UniversalExpenseTracker/3rd Party";
+			sourceTree = "<group>";
+		};
+		DBF74C7218AFAF68006D4DD4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBF74C6F18AFAF63006D4DD4 /* UETNavigationViewController.h */,
+				DBF74C7018AFAF63006D4DD4 /* UETNavigationViewController.m */,
+				DB74B1F618B19F9A00068F9F /* UETCell.h */,
+				DB74B1F718B19F9A00068F9F /* UETCell.m */,
+				DB3A25CA18B40BBC0064FEB1 /* UETPrintPageRenderer.h */,
+				DB3A25CB18B40BBC0064FEB1 /* UETPrintPageRenderer.m */,
+				DB54690318B4BF9800FE97FE /* UETSimplePageRenderer.h */,
+				DB54690418B4BF9800FE97FE /* UETSimplePageRenderer.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF74C6B18AFAA7C006D4DD4 /* Localizable.strings in Resources */,
 				DB72D2E018AEB29A00505BBE /* Main_iPad.storyboard in Resources */,
 				DB72D2EB18AEB29A00505BBE /* Images.xcassets in Resources */,
 				DB72D2DD18AEB29A00505BBE /* Main_iPhone.storyboard in Resources */,
@@ -267,11 +363,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF74C6E18AFADE3006D4DD4 /* UETTagManagementViewController.m in Sources */,
+				DB3A25CC18B40BBC0064FEB1 /* UETPrintPageRenderer.m in Sources */,
+				DBF74C7B18AFCB40006D4DD4 /* Expense.m in Sources */,
+				DB74B1F818B19F9A00068F9F /* UETCell.m in Sources */,
+				DBF74C7118AFAF63006D4DD4 /* UETNavigationViewController.m in Sources */,
+				DBF74C6718AF8F5C006D4DD4 /* JVFloatLabeledTextField.m in Sources */,
+				DB3A25C918B3B59D0064FEB1 /* DescriptionTag.m in Sources */,
 				DB72D2E918AEB29A00505BBE /* DetailViewController.m in Sources */,
+				DB792F8F18B2486800BB9C15 /* UETCustomDateViewController.m in Sources */,
 				DB72D2E618AEB29A00505BBE /* MasterViewController.m in Sources */,
+				DBF74C6018AF7CFE006D4DD4 /* UETInputExpenseViewController.m in Sources */,
 				DB72D2E318AEB29A00505BBE /* UniversalExpenseTracker.xcdatamodeld in Sources */,
 				DB72D2DA18AEB29A00505BBE /* AppDelegate.m in Sources */,
 				DB72D2D618AEB29A00505BBE /* main.m in Sources */,
+				DB54690518B4BF9800FE97FE /* UETSimplePageRenderer.m in Sources */,
+				DB3A25C618B380840064FEB1 /* XYPieChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +597,7 @@
 				DB72D30418AEB29A00505BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB72D30518AEB29A00505BBE /* Build configuration list for PBXNativeTarget "UniversalExpenseTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +606,7 @@
 				DB72D30718AEB29A00505BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

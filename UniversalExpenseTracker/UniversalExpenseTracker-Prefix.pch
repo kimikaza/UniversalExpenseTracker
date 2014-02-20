@@ -15,3 +15,46 @@
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
 #endif
+
+//COLORS
+
+#define kGray1 [UIColor colorWithRed:0.11 green:0.122 blue:0.118 alpha:1.0]
+#define kGray2 [UIColor colorWithRed:0.157 green:0.161 blue:0.157 alpha:1.0]
+#define kGray3 [UIColor colorWithRed:0.231 green:0.231 blue:0.231 alpha:1.0]
+#define kGray4 [UIColor colorWithRed:0.29 green:0.29 blue:0.29 alpha:1.0]
+#define kGrayText [UIColor colorWithRed:0.941 green:0.941 blue:0.941 alpha:1.0]
+
+#define kLila1 [UIColor colorWithRed:0.604 green:0.443 blue:0.69 alpha:1.0]
+#define kLila2 [UIColor colorWithRed:0.714 green:0.576 blue:0.8 alpha:1.0]
+#define kLila3 [UIColor colorWithRed:0.757 green:0.627 blue:0.851 alpha:1.0]
+#define kLila4 [UIColor colorWithRed:0.808 green:0.682 blue:0.902 alpha:1.0]
+#define kLilaText [UIColor colorWithRed:0.89 green:0.294 blue:0.8 alpha:1.0]
+
+#define kGreen1 [UIColor colorWithRed:0.024 green:0.722 blue:0.616 alpha:1.0]
+#define kGreen2 [UIColor colorWithRed:0.094 green:0.78 blue:0.655 alpha:1.0]
+#define kGreen3 [UIColor colorWithRed:0.157 green:0.831 blue:0.694 alpha:1.0]
+#define kGreen4 [UIColor colorWithRed:0.231 green:0.89 blue:0.737 alpha:1.0]
+#define kGreenText [UIColor colorWithRed:0.176 green:0.431 blue:0.345 alpha:1.0]
+
+#define kTransparent [UIColor colorWithRed:0.922 green:0.922 blue:0.922 alpha:0.5]
+#define kTransparentText [UIColor colorWithRed:0.412 green:0.412 blue:0.412 alpha:1.0]
+
+#define kPieGreen [UIColor colorWithRed:0.024 green:0.722 blue:0.616 alpha:1.0]
+#define kPieLila [UIColor colorWithRed:0.604 green:0.443 blue:0.69 alpha:1.0]
+#define kPieBackground [UIColor colorWithRed:0.902 green:0.902 blue:0.902 alpha:1.0]
+
+#define kBackground [UIColor colorWithRed:0.851 green:0.851 blue:0.851 alpha:1.0]
+
+#define kInputField [UIColor colorWithRed:0.941 green:0.941 blue:0.941 alpha:1.0]
+#define kInputShadow [UIColor colorWithRed:0.22 green:0.22 blue:0.22 alpha:1.0]
+
+#define kDateHeaderDark [UIColor colorWithRed:0.231 green:0.231 blue:0.231 alpha:1.0]
+#define kDateHeaderLight [UIColor colorWithRed:0.451 green:0.451 blue:0.451 alpha:1.0]
+#define kDateHeaderText [UIColor colorWithRed:0.941 green:0.941 blue:0.941 alpha:1.0]
+
+#define kDateDropDark [UIColor colorWithRed:0.451 green:0.451 blue:0.451 alpha:1.0]
+#define kDateDropLight [UIColor colorWithRed:0.851 green:0.851 blue:0.851 alpha:1.0]
+#define kDateDropText [UIColor colorWithRed:0.322 green:0.322 blue:0.322 alpha:1.0]
+
+#define kWhiteText [UIColor colorWithRed:0.941 green:0.941 blue:0.941 alpha:1.0]
+

@@ -1,0 +1,27 @@
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "2pz-XF-uhl"; */
+"2pz-XF-uhl.text" = "Title";
+
+/* Class = "IBUIViewController"; title = "Detail"; ObjectID = "Ah7-4n-0Wa"; */
+"Ah7-4n-0Wa.title" = "Detail";
+
+/* Class = "IBUIButton"; normalTitle = "INCOME"; ObjectID = "CU3-2F-una"; */
+"CU3-2F-una.normalTitle" = "INCOME";
+
+/* Class = "IBUIButton"; normalTitle = "EXPENSE"; ObjectID = "D8x-0Z-CVX"; */
+"D8x-0Z-CVX.normalTitle" = "EXPENSE";
+
+/* Class = "IBUILabel"; text = "Detail view content goes here"; ObjectID = "Lei-5M-9Gs"; */
+"Lei-5M-9Gs.text" = "Detail view content goes here";
+
+/* Class = "IBUINavigationItem"; title = "Detail"; ObjectID = "cra-N8-TIN"; */
+"cra-N8-TIN.title" = "Detail";
+
+/* Class = "IBUITableViewController"; title = "Master"; ObjectID = "pGg-6v-bdr"; */
+"pGg-6v-bdr.title" = "Master";
+
+/* Class = "IBUINavigationItem"; title = "Master"; ObjectID = "tQt-TN-PWz"; */
+"tQt-TN-PWz.title" = "Master";
+
+/* Class = "IBUIBarButtonItem"; title = "Cancel"; ObjectID = "vR5-7Y-o9F"; */
+"vR5-7Y-o9F.title" = "Cancel";

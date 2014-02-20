@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 
 #import "MasterViewController.h"
+#import "JVFloatLabeledTextField.h"
+#import "DescriptionTag.h"
 
 @implementation AppDelegate
 
@@ -16,15 +18,25 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+static void uncaughtExceptionHandler(NSException * exception)
+{
+    NSLog(@"Unhandled exception: %@", exception.description);
+    NSLog(@"Stack trace: %@", [exception callStackSymbols].description);
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    [self setAppearances];
+    [self prepareProtectedTags];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
         
-        UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
+        UINavigationController *masterNavigationController = splitViewController.viewControllers[1];
         MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
         controller.managedObjectContext = self.managedObjectContext;
     } else {
@@ -34,7 +46,43 @@
     }
     return YES;
 }
-							
+
+- (void)setAppearances{
+    JVFloatLabeledTextField *textFieldAppearance  = [JVFloatLabeledTextField appearance];
+    [textFieldAppearance setFloatingLabelTextColor:kGray4];
+    [textFieldAppearance setFloatingLabelActiveTextColor:kPieGreen];
+    //[textFieldAppearance setFloatingLabelYPadding:@2];
+    UINavigationBar *navBarAppearance = [UINavigationBar appearance];
+    [navBarAppearance setTintColor:kGreen1];
+    
+}
+
+- (void)prepareProtectedTags
+{
+    NSArray *tagsArray = @[@"SALARY", @"UTILITIES", @"CREDIT CARD", @"GROCERIES", @"NOT SURE", @"CAR"];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"DescriptionTag" inManagedObjectContext:self.managedObjectContext];
+    for(NSString *tagich in tagsArray){
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        [fetchRequest setEntity:entity];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"tag = %@", tagich];
+        [fetchRequest setPredicate:predicate];
+        NSError *error;
+        NSArray *result = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+        if(!error){
+            if(result.count==0){
+                DescriptionTag *tagec = [[DescriptionTag alloc] initWithEntity:entity insertIntoManagedObjectContext:_managedObjectContext];
+                tagec.tag = tagich;
+                tagec.protected = [NSNumber numberWithBool:YES];
+                tagec.expenses = [[NSSet alloc] init];
+                [_managedObjectContext save:&error];
+            }
+        }
+        
+    }
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
