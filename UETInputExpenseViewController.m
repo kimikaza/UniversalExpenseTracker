@@ -222,6 +222,7 @@
 - (void)initializeButtons
 {
     if(income){
+        
         [self.expenseButton setBackgroundColor:[UIColor whiteColor]];
         [self.expenseButton setTitleColor:kPieLila forState:UIControlStateNormal];
         [self.expenseButton setTintColor:kPieLila];

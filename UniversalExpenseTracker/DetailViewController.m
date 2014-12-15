@@ -130,6 +130,7 @@
 }
 
 #pragma mark - XYPieChart Delegate
+
 - (void)pieChart:(XYPieChart *)pieChart willSelectSliceAtIndex:(NSUInteger)index
 {
     NSLog(@"will select slice at index %lu",(unsigned long)index);

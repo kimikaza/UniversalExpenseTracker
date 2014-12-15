@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5053FAEF-02DA-43F5-80C7-EFF8A95E6FA5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UniversalExpenseTracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>237BD3865B106FB8FEA8A23C736E89E061C0D3A7</key>
+		<string>git.toptal.com:mchikilian/project-zoran-plesko.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UniversalExpenseTracker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>237BD3865B106FB8FEA8A23C736E89E061C0D3A7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.toptal.com:mchikilian/project-zoran-plesko.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>237BD3865B106FB8FEA8A23C736E89E061C0D3A7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>237BD3865B106FB8FEA8A23C736E89E061C0D3A7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UniversalExpenseTracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>

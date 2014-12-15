@@ -154,6 +154,12 @@
         NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
         [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
         
+//        NSFetchRequest *notSureTagRequest = [[NSFetchRequest alloc] init];
+//        NSEntityDescription *tagEntity = [NSEntityDescription entityForName:@"DescriptionTag" inManagedObjectContext:_managedObjectContext];
+//        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"tag = NOT SURE"];
+//        [notSureTagRequest setEntity:tagEntity];
+//        [notSureTagRequest setPredicate:predicate];
+        
         NSError *error = nil;
         if (![context save:&error]) {
             // Replace this implementation with code to handle the error appropriately.
